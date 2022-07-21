@@ -1,0 +1,11 @@
+MY DATA BASE PROJECT
+
+The Database project is a database that stores purchase information and purchase history of a sneaker Store
+With the flat file database, it includes information about sneaker customers with their previous purchases together with their delivery addresses
+The flat file database also contains phone numbers/contacts of the individual customers, their personal emails, the preferred sneaker brand with its corresponding size and color, required quantity with the total cost of the purchase  
+A relational database has been created for the same information with an aim of reducing data redundancy and better accessibility and organization.
+With this relational Database, its broken down and arranged into different tables. These are 
+Six tables that are generally broken down as follows including;
+* Individual ids that are primary Keys and as well uniquely identify the different categories of all the tables in this case like customers, sneaker brands, sneaker categories, cart items and payment details.
+* Particularly with the sixth table that takes the part of a join table holding foreign Keys that link to the other five tables which also includes its own id 
+* In order for further review or understanding of the tables schema pdfs have been attached laying how the tables are being structured
