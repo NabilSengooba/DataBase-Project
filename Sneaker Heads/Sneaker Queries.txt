@@ -1,0 +1,24 @@
+
+
+1.#Query Returns emails of customers whose sneaker size is 40
+
+SELECT email FROM customers WHERE id IN (SELECT id FROM Purchase_Details WHERE Cat_id IN (SELECT Cat_id FROM Category WHERE size ="40"));
+
+2.#Query Returns emails of customers whose brand name is NIKE
+SELECT email FROM customers WHERE id IN (SELECT id FROM Purchase_Details WHERE sneaker_id IN (SELECT sneaker_id FROM Sneaker_brand WHERE brand_name ="NIKE"));
+
+3.#Query to count the number of customer emails from the Database
+SELECT COUNT(emails) FROM customer;
+
+4.#Query that  shows the customers that purchased only the brand sneaker NIKE
+SELECT name FROM customers WHERE sneaker_brand =”&NIKE&”;
+
+5.#Query that returns emails of customers plus their locations
+SELECT email,location FROM customers JOIN Purchase_Details ON Purchase_Details.id=customers.id;
+
+6.#Query to select all customer emails from the Database
+SELECT emails FROM customer;
+
+7.#Query to return payment type with customers location
+SELECT payment_type,location FROM Payment JOIN Purchase_Details ON Purchase_Details.id=Payment.payment_id; 
+
